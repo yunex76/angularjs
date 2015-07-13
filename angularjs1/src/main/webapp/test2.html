@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<div ng-app="myApp" ng-controller="TextController">
+	<p>{{someText}}</p>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.2/angular.min.js">
+</script>
+
+<script>
+var app = angular.module("myApp", []);
+app.controller("TextController", function($scope) {
+	$scope.someText = 'You have started your journey.';
+});	
+</script>
+
+<p>angularjs 1.4 일경우 사용하는 방식</p>
+</body>
+</html>
